@@ -17,7 +17,7 @@ export default function Categories() {
                                     <button className="shop">SHOP NOW</button>
                                 </div>
                                 <div>
-                                    <img className="catsize" src={a.image} />
+                                    <img className="catsize" src={a.image} alt="catsize" />
                                 </div>
 
                             </div>
