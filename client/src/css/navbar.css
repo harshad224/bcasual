@@ -1,0 +1,69 @@
+.navbi{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    width: 100vw;
+    padding-top:.5rem;
+     padding-bottom:.7rem;
+    position: fixed;
+    z-index: 1000;
+    margin-top:3rem;
+}
+.logout{
+    margin-right:1rem;
+    font-size: .8rem;
+}
+
+.logout button{
+    border-style: none;
+    margin-right: 1rem;
+    background-color: white;
+    color: teal;
+}
+.options{
+    border-style: none;
+    margin-left:1.5vw;
+    font-size: .7rem;
+}
+.option1{
+    padding-top:1.1rem;
+}
+.lamaa{
+    font-weight: bolder;
+    font-size:1.8rem;
+    margin-top:.5rem;
+    padding-top: .5rem;
+    margin-right:1.8rem;
+font-family: 'Satisfy', cursive;
+color: teal;
+font-style: italic;
+text-decoration:none;
+}
+.lama{
+    text-decoration:solid underline teal;
+}
+.right{
+    margin-right: 2vw;
+    padding-top:.7rem;
+}
+.right1{
+    margin-top:.7rem;
+    margin-right: 2vw;
+    font-size:.9rem;
+}
+
+.cartbut{
+    border-style:none;
+    background-color: white;
+    color: teal;
+}
+
+.register{
+    text-decoration: none;
+    color: teal;
+}
+
+.username{
+    text-align: center;
+    color: teal;
+}

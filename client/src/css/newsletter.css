@@ -1,0 +1,22 @@
+.newsletter{
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: teal;
+background-color: white;
+}
+
+.newsletter1{
+    font-size: 5rem;
+}
+.email{
+    border:solid teal;
+    width:30rem;
+    padding-top:.5rem;
+    padding-bottom:.5rem;
+    padding-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}

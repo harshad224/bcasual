@@ -1,0 +1,72 @@
+.category{
+    display:grid;
+    background-color: bisque;
+   grid-template-rows:1fr;
+   grid-template-columns: 1fr 1fr 1fr;
+gap:.5rem;
+padding-left:.5vw;
+padding-right:.5vw;
+padding-top:5vh;
+padding-bottom:1.5vh;
+}
+.latestproducts{
+    display: flex;
+    font-style: italic;
+    font-weight: bolder;
+    width: 100vw;
+    background-color:white;
+  font-family: 'Parisienne', cursive;
+    color: teal;
+    padding-top:4rem;
+        padding-bottom:4rem;
+    margin-top:5rem;
+    margin-bottom:3rem;
+    font-size: 4rem;
+   justify-content: center;
+
+}
+.catsize{ 
+    width:90%;
+    height:34rem;
+    margin-top:.5rem;
+margin-bottom:.5rem;
+}
+.cat{
+position:relative;
+}
+.title{
+    color:white;
+}
+.information123{
+      width: 100%;
+  position: absolute;
+  text-align: center;
+  top: 45%;
+
+}
+
+.categories{
+    display: flex;
+font-style: italic;
+    font-weight: bolder;
+    background-color: white;
+    color: teal;
+  font-family: 'Parisienne', cursive;
+    width: 100vw;
+    margin-top:0rem;
+    padding-top:4rem;
+        padding-bottom:4rem;
+    margin-bottom: 3rem;
+    font-size: 4rem;
+   justify-content: center;
+}
+
+@media(max-width:1000px){
+    .catsize{
+        height: 25rem;
+    }
+    .category{
+        padding-top:1vh;
+          padding-bottom:0vh;
+    }
+}

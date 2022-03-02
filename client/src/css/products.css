@@ -1,0 +1,81 @@
+.products{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+   padding-top:0rem;
+   padding-bottom:7rem;
+    padding-left:4rem;
+    background-color: bisque;
+}
+
+.productsimage{
+        position: relative;
+
+}
+.productsimagesize{
+    margin-top: 4rem;
+    width:83%;
+    height:22rem;
+}
+.icons{
+ 
+    position:absolute;
+    z-index:1;
+ 
+background-color: rgba(0, 0, 0, 0.212);
+margin-top: -24rem;
+padding-top: 10rem;
+text-align: center;
+font-size: 2rem;
+color: white;
+}
+
+.icons11{
+    position: absolute;
+       opacity:0;
+    background-color: rgba(0, 0, 0, 0.212);
+width:80%;
+padding-left:28%;
+padding-top: 10.2rem;
+padding-bottom: 10.2rem;
+    top:15%;
+}
+.icons11:hover{
+    opacity: 1;
+}
+
+.icon1{
+color: white;
+font-size:1.5rem;
+transition: .2s;
+margin-right: .5rem;
+}
+.icon1:hover{
+   color: teal;
+}
+
+@media(max-width:1000px){
+    .products{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+   padding-top:0rem;
+   padding-bottom:6rem;
+    padding-left:4rem;
+    background-color: bisque;
+}
+    .productsimagesize{
+height: 29rem;
+    }
+    .icons11{
+    position: absolute;
+       opacity:0;
+    background-color: rgba(0, 0, 0, 0.212);
+width:81.5%;
+padding-left:26%;
+padding-top: 13.8rem;
+padding-bottom: 12.8rem;
+    top:13%;
+}
+.icon1{
+    font-size: 2.4rem;
+}
+}

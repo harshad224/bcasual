@@ -1,0 +1,81 @@
+.slides{
+    display: flex;
+    overflow: hidden;
+}
+.slickslider{
+    padding-top:4.5rem;
+    width: 100vw;
+    padding-left:0rem;
+    padding-right: 4rem;
+background-color: bisque;
+}
+.slide1{
+    display: flex;
+align-items: center;
+}
+.infor{
+    margin-left: 0rem;
+    margin-top: -2rem;
+}
+.imgdiv{
+   width:60%;
+}
+.sliderimg{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+.imgsize{
+    width:50vw;
+    position: relative;
+    z-index: -1;
+}
+
+.titles{
+    font-size:4rem;
+      color: rgba(255, 94, 65, 0.863);
+}
+.shop{
+  background-color: rgb(255, 255, 255);
+    color: teal;
+    border-radius:.2rem;
+    border-style:none;
+    padding: .5rem 1rem;
+}
+
+.slick-arrow.slick-prev,
+.slick-arrow.slick-next{
+color: black;
+position:absolute;
+z-index:1;
+padding-left:6rem;
+padding-right: 3rem;
+}
+.arrow{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position:absolute;
+    width: 100vw;
+top:55%;
+    z-index: 1000;
+    font-size:3rem;
+    cursor: pointer;
+   
+}
+.arrow1{
+    margin-left: 2vw;
+}
+.arrow2{
+    margin-right: 2vw;
+}
+
+.info{
+    color: rgba(255, 94, 65, 0.863);
+}
+
+@media(max-width:1000px){
+    .slickslider{
+         padding-top:7rem;
+    }
+}

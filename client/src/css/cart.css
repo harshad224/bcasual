@@ -1,0 +1,73 @@
+.shoppingcart{
+padding-top:3rem;
+}
+
+.cartimg{
+    width:6rem;
+}
+
+.alignself{
+    align-self: center;
+}
+
+.inputwidth{
+    width:3rem;
+    padding-left:1rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+.scrolly{
+    height:25rem;
+    overflow: scroll;
+}
+
+.shopps{
+    padding-top:6rem;
+    font-size:2rem;
+    margin-bottom:2rem;
+}
+.ordersummary{
+    width:100%;
+    height: 16rem;
+    margin-top:2.3rem;
+    margin-bottom:.2rem;
+    background-color:rgba(255, 255, 0, 0.267);
+}
+
+.order{
+     width:100%;
+    font-size:2rem;
+     padding-top:1rem;
+    padding-left:2rem;
+    padding-bottom:0rem;
+}
+.order1{
+    padding-left:1.3rem;
+    padding-bottom: 1rem;
+}
+.total{
+    font-size: 2rem;
+    padding-left:1.3rem;
+}
+
+.trash{
+    display: flex;
+}
+.trash1{
+  margin-left:4rem;
+  margin-top:.2rem;
+}
+
+.totalcash{
+text-align: end;
+margin-right:2rem;
+}
+.totalcash1{
+text-align: end;
+margin-right:.5rem;
+}
+.free{
+    text-align: end;
+    margin-right:.5rem;
+}

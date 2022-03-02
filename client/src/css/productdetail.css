@@ -1,0 +1,158 @@
+.productdetails{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+   padding-top:8rem;
+   background-color: bisque;
+   height: 100vh;
+}
+.pro{
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 90%;
+align-self: flex-start;
+}
+.protitle{
+    font-size:3rem;
+    margin-bottom:1rem;
+}
+
+.procolor{
+    font-size:1.5rem;
+    margin-top:1rem;
+}
+.prosize{
+    font-size:1.5rem;
+    margin-top:1rem;
+}
+.proimg123{
+    width:70%;
+    height:155%;
+}
+.productimg{
+    display: flex;
+    justify-content: center;
+}
+.proprice{
+    margin-top:.5rem;
+}
+
+.addcart{
+    width: 25%;
+    margin-top:1rem;
+    margin-bottom: 2rem;
+    padding:1rem .5rem;
+    border-style: none;
+    background-color: teal;
+}
+.colorsize{
+     display: flex;
+    width:100%;
+    justify-content: space-between;
+}
+.arrowleft{
+   color: black;
+    font-size:2rem;
+    margin-top: 1rem;
+}
+.back{
+    display: flex;
+}
+.arrowback{
+    color: black;
+    font-size:1.5rem;
+    margin-left: .5rem;
+}
+.plusinput{
+width:3rem;
+height:2.2rem;
+margin-left: .3rem;
+margin-right: .3rem;
+    padding-left: 1rem;
+}
+@media(max-width:1000px){
+    .productdetails{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+   padding-top:8rem;
+   background-color: bisque;
+   height: 100vh;
+}
+.plusminus{
+   padding-top:2.2rem;
+}
+
+.plus{
+    font-size: 2rem;
+}
+.plusinput{
+    height:4rem;
+    width:5rem;
+
+}
+.proimg123{
+    margin-top: 2rem;
+    width:90%;
+    height:100%;
+}
+.productimg{
+    display: flex;
+    justify-content: center;
+}
+
+.colorbutton{
+height:3rem;
+border-radius: 1rem;
+}
+.pro{
+display: flex;
+flex-direction: column;
+align-items:flex-start;
+width: 90%;
+align-self: flex-start;
+margin-top:12rem;
+margin-left: 3rem;
+}
+.protitle{
+    font-size:4rem;
+    margin-bottom:3rem;
+    margin-top: -5rem;
+}
+
+.procolor{
+    font-size:2.5rem;
+    margin-top:3rem;
+    margin-bottom: 3rem;
+}
+.prosize{
+   
+    font-size:2.5rem;
+    margin-top:3rem;
+}
+
+.proprice{
+    margin-top:.5rem;
+    font-size:3rem;
+}
+.addcart{
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    width:90vw;
+    padding-top:3rem;
+     padding-bottom:3rem;
+}
+.prodes{
+    font-size:2rem;
+}
+
+}
+body{
+    background-color: bisque;
+}
+
+.plusminus{
+    margin-top:1rem;
+}
+
