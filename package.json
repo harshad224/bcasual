@@ -4,13 +4,11 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "if-process.env.NODE_ENV=production && npm run start:prod || npm run start:dev",
-    "start:prod": "node ./server/server.js",
-    "start:dev": "set process.env.NODE_ENV=development && concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
-    "client": "cd client && npm run start",
-    "install": "cd client && npm install",
+    "start": "node server/server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm start\" \"npm run client\"",
     "build": "cd client && npm run build",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm iinstall --prefix client"
   },
   "engines": {
     "node": "14.17.5"
