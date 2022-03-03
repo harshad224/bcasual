@@ -1,4 +1,4 @@
-const Cart = require("../models/Cartmodel");
+const Cart = require("../models/cartmodel");
 const asyncHandler = require("express-async-handler")
 const { verifyToken, verifyTokenAndAuthorization, verifyTokenAndAdmin } = require("./verifyToken")
 const router = require("express").Router();

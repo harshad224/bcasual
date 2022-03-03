@@ -1,4 +1,4 @@
-const Order = require("../models/Ordermodel");
+const Order = require("../models/ordermodel");
 const asyncHandler = require("express-async-handler")
 const { verifyToken, verifyTokenAndAuthorization, verifyTokenAndAdmin } = require("./verifyToken")
 const router = require("express").Router();
