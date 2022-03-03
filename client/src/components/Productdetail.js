@@ -23,7 +23,7 @@ export default function Productdetail() {
 
         const getproductdetail = async () => {
             try {
-                const getpro = await axios.get(`https://bcasual.herokuapp.com/api/product/get/${productid}`)
+                const getpro = await axios.get(`/product/get/${productid}`)
                 setProductdes(getpro.data._doc)
             } catch (err) {
                 console.log(err)

@@ -7,7 +7,7 @@ export const loginUser = createAsyncThunk(
     'logins/loginUser',
     // callback function
     async (userData) => {
-        const res = await axios.post("https://bcasual.herokuapp.com/api/auth/login", userData)
+        const res = await axios.post("/auth/login", userData)
         return res.data
 
     })

@@ -12,7 +12,7 @@ export default function Products11() {
     useEffect(() => {
         const gethomepro = async () => {
             try {
-                const gethome = await axios.get('https://bcasual.herokuapp.com/api/product/item')
+                const gethome = await axios.get('/product/item')
 
                 setProdetail(gethome.data)
                 console.log(gethome)
