@@ -51,5 +51,5 @@ app.use(function (req, res, next) {
 app.use(errorHandler)
 
 app.listen(process.env.PORT || 8000, () => {
-    console.log('PORT in online')
+    console.log('PORT is online')
 })
