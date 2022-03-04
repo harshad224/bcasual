@@ -61,7 +61,7 @@ router.get("/get/:id", asyncHandler(async (req, res) => {
     }
 }))
 
-router.get("/item", asyncHandler(async (req, res) => {
+router.get("/", asyncHandler(async (req, res) => {
     const newquery = req.query.new
     const catquery = req.query.category
 
