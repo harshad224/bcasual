@@ -12,7 +12,7 @@ export default function Products11() {
     useEffect(() => {
         const gethomepro = async () => {
             try {
-                const gethome = await axios.get('/product/')
+                const gethome = await axios.get('/api/product/')
 
                 setProdetail(gethome.data)
                 console.log(gethome)

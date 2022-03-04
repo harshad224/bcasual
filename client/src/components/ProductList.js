@@ -18,7 +18,7 @@ export default function ProductList() {
     useEffect(() => {
         const getProducts = async () => {
             try {
-                const res = await axios.get(cat ? `/product?category=${cat}` : '/product/')
+                const res = await axios.get(cat ? `/api/product?category=${cat}` : '/api/product/')
                 setProducts(res.data)
                 console.log(res.data)
             } catch (err) {

@@ -5,7 +5,7 @@ export const signupUser = createAsyncThunk(
     'signups/signupUser',
     async (user) => {
 
-        const res = await axios.post("/auth/register", user)
+        const res = await axios.post("/api/auth/register", user)
 
         return res.data
     })

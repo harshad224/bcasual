@@ -29,7 +29,7 @@ export default function Cart() {
     useEffect(() => {
         const makeRequest = async () => {
             try {
-                axios.post("/checkout/payment", { tokenId: stripeToken.id, amount: 2000, })
+                axios.post("/api/checkout/payment", { tokenId: stripeToken.id, amount: 2000, })
             } catch (err) {
                 console.log(err)
             }
