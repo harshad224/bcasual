@@ -59,42 +59,42 @@ router.get("/get/:userid", verifyTokenAndAuthorization, asyncHandler(async (req,
     }
 }))
 
-router.get("/", verifyTokenAndAdmin, asyncHandler(async (req, res) => {
-    const Orders = await Order.find();
+// router.get("/", verifyTokenAndAdmin, asyncHandler(async (req, res) => {
+//     const Orders = await Order.find();
 
-    if (Orders) {
-        res.status(200).json(Orders)
-    } else {
-        res.status(500).json(err)
-    }
+//     if (Orders) {
+//         res.status(200).json(Orders)
+//     } else {
+//         res.status(500).json(err)
+//     }
 
 
-})
-)
+// })
+// )
 
-router.get("/income", verifyTokenAndAdmin, asyncHandler(async (req, res) => {
-    const date = new Date();
-    const lastMonth = new Date(date.setMonth(date.getMonth() - 1))
-    const previousMonth = new Date(date.setMonth(lastMonth.getMonth() - 1))
+// router.get("/income", verifyTokenAndAdmin, asyncHandler(async (req, res) => {
+//     const date = new Date();
+//     const lastMonth = new Date(date.setMonth(date.getMonth() - 1))
+//     const previousMonth = new Date(date.setMonth(lastMonth.getMonth() - 1))
 
-    const income = await Order.aggregate([
-        { $match: { createdAt: { $gte: previousMonth } } },
-        {
-            $project: {
-                month: { $month: "$createdAt" },
-                sales: "$amount",
-            },
-        },
-        {
-            $group: {
-                _id: "$month",
-                total: { $sum: "$sales" }
-            },
-        }
+//     const income = await Order.aggregate([
+//         { $match: { createdAt: { $gte: previousMonth } } },
+//         {
+//             $project: {
+//                 month: { $month: "$createdAt" },
+//                 sales: "$amount",
+//             },
+//         },
+//         {
+//             $group: {
+//                 _id: "$month",
+//                 total: { $sum: "$sales" }
+//             },
+//         }
 
-    ])
-    res.status(200).json(income)
-})
-)
+//     ])
+//     res.status(200).json(income)
+// })
+// )
 
 module.exports = router

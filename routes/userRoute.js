@@ -53,26 +53,26 @@ router.get("/get/:id", verifyTokenAndAuthorization, asyncHandler(async (req, res
     }
 }))
 
-router.get("/", verifyTokenAndAdmin, asyncHandler(async (req, res) => {
-    const query = req.query.new
-    const getUser = query ? await User.find().sort({ _id: -1 }).limit(1) : await User.find()
-    if (getUser) {
-        res.status(200).json(getUser)
-    } else {
-        res.status(500);
-        throw new Error('Sorry,cannot fetch all users')
-    }
-}))
+// router.get("/", verifyTokenAndAdmin, asyncHandler(async (req, res) => {
+//     const query = req.query.new
+//     const getUser = query ? await User.find().sort({ _id: -1 }).limit(1) : await User.find()
+//     if (getUser) {
+//         res.status(200).json(getUser)
+//     } else {
+//         res.status(500);
+//         throw new Error('Sorry,cannot fetch all users')
+//     }
+// }))
 
-router.get("/stats", verifyTokenAndAdmin, async (req, res) => {
-    const data = new Date();
-    const lastYear = new Date(date.setFullYear(date.getFullYear() - 1))
+// router.get("/stats", verifyTokenAndAdmin, async (req, res) => {
+//     const data = new Date();
+//     const lastYear = new Date(date.setFullYear(date.getFullYear() - 1))
 
-    try {
-        const data = await User.aggregate
-    } catch (err) {
-        res.status(500).json(err)
-    }
-})
+//     try {
+//         const data = await User.aggregate
+//     } catch (err) {
+//         res.status(500).json(err)
+//     }
+// })
 
 module.exports = router

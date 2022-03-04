@@ -60,18 +60,18 @@ router.get("/get/:userid", verifyTokenAndAuthorization, asyncHandler(async (req,
     }
 }))
 
-router.get("/", verifyTokenAndAdmin, asyncHandler(async (req, res) => {
-    const carts = await Cart.find();
+// router.get("/", verifyTokenAndAdmin, asyncHandler(async (req, res) => {
+//     const carts = await Cart.find();
 
-    if (carts) {
-        res.status(200).json(carts)
-    } else {
-        res.status(500).json(err)
-    }
+//     if (carts) {
+//         res.status(200).json(carts)
+//     } else {
+//         res.status(500).json(err)
+//     }
 
 
-})
-)
+// })
+// )
 
 
 module.exports = router
