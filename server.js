@@ -38,7 +38,7 @@ __dirname1 = path.resolve()
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname1, "/client/build")));
     app.get("*", (req, res) => {
-        res.sendFile(path.resolve(__dirname1, "build", "index.html"));
+        res.sendFile(path.resolve(__dirname1, "client", "build", "index.html"));
     })
 } else {
     res.send("App is running")
