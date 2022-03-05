@@ -30,7 +30,6 @@ export default function Sliders() {
                                     <div className="infor">
                                         <h1 className="titles">{z.title}</h1>
                                         <p className="info">{z.info}</p>
-                                        <button className="shop">SHOP NOW</button>
                                     </div>
 
                                 </div>
