@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FaArrowLeft, FaMinus, FaPlus } from "react-icons/fa";
 import '../css/productdetail.css';
-import Announcement from "./Announcement";
 import Navbar from "./Navbar";
 import axios from "axios";
 import { useDispatch } from "react-redux";
@@ -66,7 +65,6 @@ export default function Productdetail() {
 
     return (
         <>
-            <Announcement />
             <Navbar />
             <div className="productdetails">
                 <div className="productimg">

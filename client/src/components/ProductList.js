@@ -2,7 +2,6 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import '../css/productlist.css'
-import Announcement from "./Announcement";
 import Navbar from "./Navbar";
 import Products from "./Products";
 
@@ -43,7 +42,6 @@ export default function ProductList() {
     console.log(filters)
     return (
         <>
-            <Announcement />
             <Navbar />
             <div className="filteroption">
                 <div className="jackets">Jackets</div>

@@ -23,7 +23,7 @@ export default function Products({ cat, products, filters }) {
                     return (
                         <div key={a._id}>
                             <div className="productsimage">
-                                <div className="icons11"><Link to={`/product/${a._id}`}><FaSearch className="icon1" /></Link><FaShoppingCart className="icon1" /><FaHeart className="icon1" /></div>
+                                <div className="icons11"><Link to={`/product/${a._id}`}><FaSearch className="icon1" /></Link></div>
                                 <img className="productsimagesize" src={`/${a.image}`} alt="category" />
                             </div>
                         </div>

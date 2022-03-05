@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FaTrash } from "react-icons/fa";
 import '../css/cart.css';
-import Announcement from "./Announcement";
 import Navbar from "./Navbar";
 import { useDispatch, useSelector } from "react-redux";
 import { deleteProduct } from "../redux/cartRedux"
@@ -38,7 +37,6 @@ export default function Cart() {
     }, [stripeToken])
     return (
         <>
-            <Announcement />
             <Navbar />
 
             <div className="container shoppingcart">
