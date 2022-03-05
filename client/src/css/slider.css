@@ -31,9 +31,7 @@ align-items: center;
     z-index: -1;
 }
 .imgsize1{
-   height:40rem;
-    position: relative;
-    z-index: -1;
+   height:30rem;
 }
 .titles{
     font-size:4rem;
@@ -84,6 +82,6 @@ top:55%;
              padding-right:6rem;
     }
     .imgsize1{
-   height:30rem;
+   height:20rem;
 }
 }
