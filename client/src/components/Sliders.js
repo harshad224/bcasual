@@ -22,7 +22,7 @@ export default function Sliders() {
                             < div>
                                 <div className="slide1">
                                     <div className="imgdiv">
-                                        <img className="imgsize" src="images/shop11.png" alt="jacket" />
+                                        <img className="imgsize" src={z.img} alt="jacket" />
                                     </div>
 
                                     <div className="infor">
