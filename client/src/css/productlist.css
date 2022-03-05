@@ -8,7 +8,7 @@
     width: 100vw;
 }
 .space{
-   padding-top:9rem;
+   padding-top:8.5rem;
 }
 .jackets{
     display: flex;
@@ -48,7 +48,7 @@
     z-index:2000;
     padding: .3rem;
     font-size:.8rem;
-     margin-top:7rem;
+     margin-top:6rem;
 }
 .coloropt{
     padding:.5rem 1rem;
