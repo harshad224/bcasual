@@ -27,12 +27,13 @@ align-items: center;
 }
 .imgsize{
     width:50vw;
+       height:30rem;
     position: relative;
     z-index: -1;
 }
-.imgsize1{
-   height:30rem;
-}
+/* .imgsize1{
+
+} */
 .titles{
     font-size:4rem;
       color: rgba(255, 94, 65, 0.863);
