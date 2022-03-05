@@ -26,8 +26,8 @@ align-items: center;
     width: 100vw;
 }
 .imgsize{
-    width:50vw;
-       height:30rem;
+    width:45vw;
+       height:40rem;
     position: relative;
     z-index: -1;
 }
