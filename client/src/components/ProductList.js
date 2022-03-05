@@ -47,7 +47,7 @@ export default function ProductList() {
             <Navbar />
             <div className="filteroption">
                 <div className="jackets">Jackets</div>
-                <div>
+                <div className="filler">
                     <label className="filters">Filter:</label>
                     <select className="colorr" id="colorr" name="color" value={filters.color} onChange={handleFilter}>
                         <option>color</option>
@@ -72,10 +72,6 @@ export default function ProductList() {
                         <option>leather</option>
                         <option>linen</option>
                         <option>silk</option>
-                    </select>
-                    <select className="sortlabel" id="sortlabel" name="sort" value={filters.sort} onChange={handleFilter}>
-                        <option>newest</option>
-                        <option>popular</option>
                     </select>
                 </div>
             </div>

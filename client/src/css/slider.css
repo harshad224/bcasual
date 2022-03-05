@@ -3,10 +3,10 @@
     overflow: hidden;
 }
 .slickslider{
-    padding-top:4.5rem;
+    padding-top:3rem;
     width: 100vw;
     padding-left:0rem;
-    padding-right: 4rem;
+    padding-right: 5.5rem;
 background-color: bisque;
 }
 .slide1{
@@ -15,7 +15,7 @@ align-items: center;
 }
 .infor{
     margin-left: 0rem;
-    margin-top: -2rem;
+    margin-top:2rem;
 }
 .imgdiv{
    width:60%;
@@ -30,7 +30,11 @@ align-items: center;
     position: relative;
     z-index: -1;
 }
-
+.imgsize1{
+   height:40rem;
+    position: relative;
+    z-index: -1;
+}
 .titles{
     font-size:4rem;
       color: rgba(255, 94, 65, 0.863);
@@ -77,5 +81,9 @@ top:55%;
 @media(max-width:1000px){
     .slickslider{
          padding-top:7rem;
+             padding-right:6rem;
     }
+    .imgsize1{
+   height:30rem;
+}
 }

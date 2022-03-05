@@ -94,7 +94,7 @@ export default function Productdetail() {
                     <button className="addcart" onClick={onHandleClick}>Add to cart</button>
                     <p className="prodes">{productdes.description}</p>
                     <div className="back">
-                        <Link to="/">
+                        <Link to="/products/jackets">
                             <FaArrowLeft className="arrowleft" /><span className="arrowback">Home</span>
                         </Link>
                     </div>

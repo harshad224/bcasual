@@ -1,0 +1,119 @@
+.filteroption{
+    position: fixed;
+    z-index:2;
+    display:flex;
+    background-color: teal;
+        justify-content:space-between;
+        padding-left:1.5rem;
+    width: 100vw;
+}
+.space{
+   padding-top: 11.5rem;
+}
+.jackets{
+    display: flex;
+    padding-top:8rem;
+    font-weight: bold;
+    padding-bottom:.8rem;
+    font-size:2.5rem;
+    
+}
+.filters{
+    position: relative;
+    z-index: 2000;
+    margin-right:1rem;
+    font-size:.9rem;
+}
+.filtercopy{
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    justify-content:flex-end;
+    margin-top:2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.filler{
+    padding-top:1rem;
+    padding-right: 2rem;
+}
+.sortlabel{
+ padding: .3rem;
+    font-size:.8rem;
+    margin-right:2rem;
+    margin-left:.5rem;
+}
+.colorr{
+    position: relative;
+    z-index:2000;
+    padding: .3rem;
+    font-size:.8rem;
+     margin-top:8.2rem;
+}
+.coloropt{
+    padding:.5rem 1rem;
+margin-right:3rem;
+}
+.coloropt3{
+    padding:.5rem 1rem;
+   margin-left:1rem;
+}
+.colors{
+    display: flex;
+    margin-top:1rem;
+    margin-left: 1rem;
+}
+.productimg{
+    width:100%;
+    height:50vh;
+}
+
+.productimgsize{
+  display: flex;
+  background-color: bisque;
+  flex-wrap: wrap;
+  padding-top:7.2rem;
+  height: 100vh;
+    overflow:scroll;
+}
+
+.productimgsize1{   
+    width:30%;
+margin-left:1.5rem;
+margin-bottom: 1rem;
+}
+
+
+.materiallabel{
+   padding: .3rem;
+    font-size:.8rem;
+    margin-top: 1rem;
+    margin-left:.5rem;
+}
+
+.size{
+  padding: .3rem;
+    font-size:.8rem;
+     margin-left:.5rem;
+}
+.coloropt3{
+    margin-bottom:.5rem;
+}
+
+.productlisting{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+     padding-top:0rem;
+}
+
+.productimgsize123{
+    width:50%;
+  padding-top:1rem;
+  padding-left: 0rem;
+}
+
+.productimgsize1234{
+    width:100%;
+      height:100%;
+}
