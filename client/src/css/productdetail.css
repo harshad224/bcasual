@@ -2,7 +2,7 @@
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-   padding-top:8rem;
+   padding-top:6rem;
    background-color: bisque;
    height: 100vh;
 }
@@ -63,6 +63,7 @@ align-self: flex-start;
     color: black;
     font-size:1.5rem;
     margin-left: .5rem;
+    padding-top: 1rem;
 }
 .plusinput{
 width:3rem;
@@ -72,6 +73,9 @@ margin-right: .3rem;
     padding-left: 1rem;
 }
 @media(max-width:1000px){
+       .back{
+        display: none;
+    }
     .productdetails{
     display:grid;
     grid-template-columns: 1fr;
@@ -85,7 +89,7 @@ margin-right: .3rem;
 }
 
 .plus{
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 .plusinput{
     height:4rem;
@@ -148,6 +152,12 @@ margin-left: 3rem;
 }
 
 }
+
+@media(min-width:1000px){
+    .back1{
+        display: none;
+    }
+}
 body{
     background-color: bisque;
 }
@@ -155,4 +165,5 @@ body{
 .plusminus{
     margin-top:1rem;
 }
+
 

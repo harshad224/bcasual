@@ -42,6 +42,7 @@ export default function Productdetail() {
     const onHandleClick = () => {
         if (color && size && amount) {
             dispatch(addProduct({ ...productdes, color, size, amount }))
+            window.alert("Added to the cart")
         } else {
             window.alert("Please select the given field(quantity,color,size)")
         }
@@ -67,6 +68,11 @@ export default function Productdetail() {
         <>
             <Navbar />
             <div className="productdetails">
+                <div className="back1">
+                    <Link to="/products/jackets">
+                        <FaArrowLeft className="arrowleft" /><span className="arrowback">Back</span>
+                    </Link>
+                </div>
                 <div className="productimg">
                     <img className="proimg123" src={`/${productdes.image}`} alt="category" />
                 </div>
@@ -93,7 +99,7 @@ export default function Productdetail() {
                     <p className="prodes">{productdes.description}</p>
                     <div className="back">
                         <Link to="/products/jackets">
-                            <FaArrowLeft className="arrowleft" /><span className="arrowback">Home</span>
+                            <FaArrowLeft className="arrowleft" /><span className="arrowback">Back</span>
                         </Link>
                     </div>
                 </div>
