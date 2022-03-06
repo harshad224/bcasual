@@ -58,12 +58,6 @@ export default function Productdetail() {
     }
 
 
-    console.log(amount)
-
-    console.log(size)
-
-    console.log(color)
-
     return (
         <>
             <Navbar />

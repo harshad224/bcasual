@@ -59,6 +59,7 @@ align-self: flex-start;
 .back{
     display: flex;
 }
+
 .arrowback{
     color: black;
     font-size:1.5rem;
@@ -75,6 +76,12 @@ margin-right: .3rem;
 @media(max-width:1000px){
        .back{
         display: none;
+    }
+    .back1{
+        margin-left: 2rem;
+    }
+    .arrowback{
+        font-size: 2rem;
     }
     .productdetails{
     display:grid;
@@ -94,6 +101,7 @@ margin-right: .3rem;
 .plusinput{
     height:4rem;
     width:5rem;
+     font-size: 2rem;
 
 }
 .proimg123{
