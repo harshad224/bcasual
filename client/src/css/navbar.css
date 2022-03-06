@@ -1,6 +1,6 @@
 .navbi{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: white;
     width: 100vw;
     padding-top:.1rem;
