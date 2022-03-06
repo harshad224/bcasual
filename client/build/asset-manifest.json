@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "https://bcasual.herokuapp.com/static/css/main.80efbd56.css",
+    "main.css": "https://bcasual.herokuapp.com/static/css/main.956dccd0.css",
     "main.js": "https://bcasual.herokuapp.com/static/js/main.3673cfbd.js",
     "static/js/787.a18fa8b6.chunk.js": "https://bcasual.herokuapp.com/static/js/787.a18fa8b6.chunk.js",
     "static/media/women.jpg": "https://bcasual.herokuapp.com/static/media/women.20d04fae1dbc251c6f57.jpg",
@@ -9,12 +9,12 @@
     "static/media/slick.ttf": "https://bcasual.herokuapp.com/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "https://bcasual.herokuapp.com/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "https://bcasual.herokuapp.com/index.html",
-    "main.80efbd56.css.map": "https://bcasual.herokuapp.com/static/css/main.80efbd56.css.map",
+    "main.956dccd0.css.map": "https://bcasual.herokuapp.com/static/css/main.956dccd0.css.map",
     "main.3673cfbd.js.map": "https://bcasual.herokuapp.com/static/js/main.3673cfbd.js.map",
     "787.a18fa8b6.chunk.js.map": "https://bcasual.herokuapp.com/static/js/787.a18fa8b6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.80efbd56.css",
+    "static/css/main.956dccd0.css",
     "static/js/main.3673cfbd.js"
   ]
 }
