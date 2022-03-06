@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { FaTrash } from "react-icons/fa";
 import '../css/cart.css';
 import Navbar from "./Navbar";
@@ -9,7 +10,9 @@ import axios from "axios"
 
 export default function Cart() {
 
+    const navigate = useNavigate()
     const cart = useSelector(state => state.user.cart.product)
+    const user = useSelector(state => state.user.logins.currentUser)
     const total = useSelector(state => state.user.cart.total)
     const [stripeToken, setStripeToken] = useState(null)
     const dispatch = useDispatch()
@@ -18,6 +21,11 @@ export default function Cart() {
         dispatch(deleteProduct(id))
     }
 
+    const handleCheck = () => {
+        if (!user) {
+            return navigate("/signin")
+        }
+    }
     const KEY = process.env.REACT_APP_STRIPE
 
     const onToken = (token) => {
@@ -80,7 +88,7 @@ export default function Cart() {
                             amount={total * 100}
                             token={onToken}
                             stripeKey={KEY}>
-                            <button className="btn btn-success w-100 py-3">CHECKOUT</button>
+                            <button className="btn btn-success w-100 py-3" onClick={handleCheck}>CHECKOUT</button>
                         </StripeCheckout>
                     </div>
                     <div className="col-md-8 my5">
