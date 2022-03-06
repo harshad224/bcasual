@@ -19,6 +19,7 @@ align-items: center;
 }
 .imgdiv{
    width:60%;
+height:40rem;
 }
 .sliderimg{
     display: flex;
@@ -27,7 +28,6 @@ align-items: center;
 }
 .imgsize{
     width:45vw;
-       height:40rem;
     position: relative;
     z-index: -1;
 }
