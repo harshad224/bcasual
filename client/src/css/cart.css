@@ -23,9 +23,9 @@ padding-top:3rem;
 }
 
 .shopps{
-    padding-top:6rem;
+    padding-top:5rem;
     font-size:2rem;
-    margin-bottom:2rem;
+    margin-bottom:1rem;
 }
 .ordersummary{
     width:100%;
@@ -75,5 +75,8 @@ margin-right:.5rem;
 @media(max-width:1000px){
 .scrolly{
     height:45rem;
+}
+.my5{
+    margin-top:2rem;
 }
 }

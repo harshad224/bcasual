@@ -42,51 +42,6 @@ export default function Cart() {
             <div className="container shoppingcart">
                 <div className="shopps">Your Cart</div>
                 <div className="row">
-                    <div className="col-md-8">
-                        <div className="row">
-                            <div className="col-5">
-                                <div>Product</div>
-                            </div>
-                            <div className="col">
-                                <div>Price</div>
-                            </div>
-                            <div className="col">
-                                <div>Quantity</div>
-                            </div>
-                            <div className="col">
-                                <div>Total</div>
-                            </div>
-                        </div><hr />
-                        <div className=" scrolly">
-                            {cart.map((s) => {
-                                return (
-                                    <div key={s._id}>
-                                        <div className="row">
-                                            <div className="d-flex col alignself">
-                                                <img src={s.image} className="cartimg" alt="jacket" />
-                                            </div>
-                                            <div className="col alignself">
-                                                <div><strong>{s.title}</strong></div>
-                                                <div>{s.size}</div>
-                                                <button className="btn" style={{ backgroundColor: `${s.color}` }}></button>
-                                            </div>
-                                            <div className="col alignself">
-                                                <div>{s.price}</div>
-                                            </div>
-                                            <div className="col alignself">
-                                                <div>{s.amount}</div>
-                                            </div>
-                                            <div className="col alignself trash">
-                                                <div>{s.price * s.amount}</div>
-                                                <FaTrash className="trash1" onClick={() => onHandleDelete(s._id)} />
-                                            </div>
-
-                                        </div><hr />
-                                    </div>
-                                )
-                            })}
-                        </div>
-                    </div>
                     <div className="col-md-4">
                         <div className="ordersummary">
                             <div className="row">
@@ -128,6 +83,52 @@ export default function Cart() {
                             <button className="btn btn-success w-100 py-3">CHECKOUT</button>
                         </StripeCheckout>
                     </div>
+                    <div className="col-md-8 my5">
+                        <div className="row">
+                            <div className="col-5">
+                                <div>Product</div>
+                            </div>
+                            <div className="col">
+                                <div>Price</div>
+                            </div>
+                            <div className="col">
+                                <div>Quantity</div>
+                            </div>
+                            <div className="col">
+                                <div>Total</div>
+                            </div>
+                        </div><hr />
+                        <div className="scrolly">
+                            {cart.map((s) => {
+                                return (
+                                    <div key={s._id}>
+                                        <div className="row">
+                                            <div className="d-flex col alignself">
+                                                <img src={s.image} className="cartimg" alt="jacket" />
+                                            </div>
+                                            <div className="col alignself">
+                                                <div><strong>{s.title}</strong></div>
+                                                <div>{s.size}</div>
+                                                <button className="btn" style={{ backgroundColor: `${s.color}` }}></button>
+                                            </div>
+                                            <div className="col alignself">
+                                                <div>{s.price}</div>
+                                            </div>
+                                            <div className="col alignself">
+                                                <div>{s.amount}</div>
+                                            </div>
+                                            <div className="col alignself trash">
+                                                <div>{s.price * s.amount}</div>
+                                                <FaTrash className="trash1" onClick={() => onHandleDelete(s._id)} />
+                                            </div>
+
+                                        </div><hr />
+                                    </div>
+                                )
+                            })}
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </>
