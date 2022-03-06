@@ -39,7 +39,7 @@ export default function Signup() {
 
     return (
         <div className="auth">
-            <div className="lam"><h1 className="lam1"><Link to="/">LAMA</Link></h1></div>
+            <div className="lam"><h1 className="lam1"><Link to="/">BCasual</Link></h1></div>
             <div>
                 <form className="auth1" >
                     <h3 className="heading">Signup</h3>
