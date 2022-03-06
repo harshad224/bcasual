@@ -36,7 +36,11 @@ export default function Cart() {
     useEffect(() => {
         const makeRequest = async () => {
             try {
-                axios.post("/api/checkout/payment", { tokenId: stripeToken.id, amount: 2000, })
+                if (cart && user) {
+                    axios.post("http://localhost:8000/api/checkout/payment", { tokenId: stripeToken.id, amount: 2000, })
+                } else {
+                    window.alert("Please Login/Add item to the cart")
+                }
             } catch (err) {
                 console.log(err)
             }
@@ -80,7 +84,7 @@ export default function Cart() {
                                 <div className="col totalcash">{total}</div>
                             </div>
                         </div>
-                        <StripeCheckout
+                        {user && <StripeCheckout
                             name="Shopify"
                             billingAddress
                             shippingAddress
@@ -89,7 +93,7 @@ export default function Cart() {
                             token={onToken}
                             stripeKey={KEY}>
                             <button className="btn btn-success w-100 py-3" onClick={handleCheck}>CHECKOUT</button>
-                        </StripeCheckout>
+                        </StripeCheckout>}
                     </div>
                     <div className="col-md-8 my5">
                         <div className="row">

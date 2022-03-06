@@ -7,6 +7,7 @@ import Productdetail from './components/Productdetail';
 import Cart from './components/Cart';
 import ProductList from './components/ProductList';
 import { useSelector } from 'react-redux';
+import Error from "./components/Error"
 
 
 
@@ -24,6 +25,7 @@ function App() {
         <Route exact path="/cart" element={<Cart />} />
         <Route exact path="/signin" element={userr ? <Navigate to="/" /> : <Login />} />
         <Route exact path="/signup" element={userr ? <Navigate to="/" /> : <Signup />} />
+        <Route exact path="*" element={<Error />} />
       </Routes>
     </Router>
   );
