@@ -19,15 +19,6 @@ export default function Navbar() {
     }
     return (
         <div className="navbi">
-            <div className="option1">
-                <select className="options">
-                    <option>EN</option>
-                    <option>HI</option>
-                    <option>FR</option>
-                    <option>IT</option>
-                </select>
-                <input type='text' />
-            </div>
             <div>
                 <Link to="/" className="lama"><h1 className="lamaa">BCasual</h1></Link>
             </div>
