@@ -53,7 +53,7 @@ align-self: flex-start;
 }
 .arrowleft{
    color: black;
-    font-size:2rem;
+    font-size:2.5rem;
     margin-top: 1rem;
 }
 .back{
@@ -78,7 +78,7 @@ margin-right: .3rem;
         display: none;
     }
     .back1{
-        margin-left: 2rem;
+        margin-left: 2.5rem;
     }
     .arrowback{
         font-size: 2rem;

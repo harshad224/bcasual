@@ -64,7 +64,7 @@ export default function Productdetail() {
             <div className="productdetails">
                 <div className="back1">
                     <Link to="/products/jackets">
-                        <FaArrowLeft className="arrowleft" /><span className="arrowback">Back</span>
+                        <FaArrowLeft className="arrowleft" />
                     </Link>
                 </div>
                 <div className="productimg">
@@ -93,7 +93,7 @@ export default function Productdetail() {
                     <p className="prodes">{productdes.description}</p>
                     <div className="back">
                         <Link to="/products/jackets">
-                            <FaArrowLeft className="arrowleft" /><span className="arrowback">Back</span>
+                            <FaArrowLeft className="arrowleft" />
                         </Link>
                     </div>
                 </div>
