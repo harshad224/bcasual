@@ -1,6 +1,6 @@
 .navbi{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: white;
     width: 100vw;
     padding-top:.1rem;
@@ -32,7 +32,7 @@
     font-size:1.8rem;
     margin-top:.5rem;
     padding-top: .5rem;
-    margin-right:1.8rem;
+    margin-left:1.8rem;
 font-family: 'Satisfy', cursive;
 color: teal;
 font-style: italic;
